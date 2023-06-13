@@ -1,8 +1,9 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
+import { RootState } from '../types/user';
 
 function Home() {
-  const users = useSelector((state: any) => state.user.users);
+  const users = useSelector((state: RootState) => state.user.users);
   const latestUser = users.length -1
   return (
     <div>

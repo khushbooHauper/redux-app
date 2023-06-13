@@ -1,4 +1,4 @@
-import { AppState } from "../types/user";
+import { AppState, UserAction } from "../types/user";
 
 const initialState: AppState = {
   user: {},
@@ -8,7 +8,7 @@ const initialState: AppState = {
   ],
 };
 
-const userReducer = (state = initialState, action: any) => {
+const userReducer = (state = initialState, action: UserAction) => {
   switch (action.type) {
     case "ADD":
       return {

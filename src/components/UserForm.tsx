@@ -5,10 +5,10 @@ import { addUser, editUser } from "../redux/actions";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { User } from "../types/user";
+import { RootState, User } from "../types/user";
 
 function UserForm() {
-  const users = useSelector((state: any) => state.user.users);
+  const users = useSelector((state: RootState) => state.user.users);
   const location = useLocation();
   const userToEdit = location.state?.userToEdit;
 
