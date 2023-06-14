@@ -1,7 +1,7 @@
 import { AppState, UserAction } from "../types/user";
 
 const initialState: AppState = {
-  user: {},
+  // user: {},
   users: [
     { id: 1, name: "radha", city: "ahmdavad" },
     { id: 2, name: "krishna", city: "punjab" },

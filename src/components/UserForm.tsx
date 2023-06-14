@@ -5,7 +5,8 @@ import { addUser, editUser } from "../redux/actions";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { RootState, User } from "../types/user";
+import { User } from "../types/user";
+import { RootState } from "../redux/store";
 
 function UserForm() {
   const users = useSelector((state: RootState) => state.user.users);

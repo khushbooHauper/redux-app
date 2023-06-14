@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
-import { RootState } from '../types/user';
+import { RootState } from '../redux/store';
 
 function Home() {
   const users = useSelector((state: RootState) => state.user.users);

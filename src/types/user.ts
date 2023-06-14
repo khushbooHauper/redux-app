@@ -5,12 +5,12 @@ export type User = {
   };
   
   export type AppState = {
-    user: User | {};
+    // user: User | {};
     users: User[];
   };
-  export type RootState = {
-    user: AppState;
-};
+//   export type RootState = {
+//     user: AppState;
+// };
 export type AddUserAction = {
     type: "ADD";
     payload: User;

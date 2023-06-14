@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Table, Button } from "react-bootstrap";
 import { useSelector } from "react-redux";
-import { RootState, User } from "../types/user";
+import { User } from "../types/user";
 import { useDispatch } from "react-redux";
 import { deleteUser, editUser } from "../redux/actions";
 import { useNavigate } from "react-router-dom";
+import { RootState } from "../redux/store";
 
 const UserTable = () => {
   const users = useSelector((state: RootState) => state.user.users);
